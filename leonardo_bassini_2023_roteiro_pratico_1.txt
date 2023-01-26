@@ -1,0 +1,87 @@
+PARTE.1
+=======
+CREATE DATABASE leonardo_bassini_2023_roteiro_pratico_1;
+
+USE leonardo_bassini_2023_roteiro_pratico_1
+
+PARTE.2
+=======
+CREATE TABLE clientes (
+
+   nome VARCHAR(50)
+   id VARCHAR(50)
+   email VARCHAR(50)
+   idade INTEGER
+);
+
+
+PARTE.3
+=======
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Armenia", 1, "armenia@email.com", 62);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Barbarah", 2, "barbarah@email.com", 61);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Cernia", 3, "cernia@email.com", 60);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Dalia", 4, "dalia@email.com", 59);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Emerson", 5, "emerson@email.com", 58);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Fernans", 6, "fernans@email.com", 57);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Gamalia", 7, "gamalia@email.com", 56);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Hermis", 8, "hermis@email.com", 55);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Iennis", 9, "iennis.com", 54);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Janilson", 10, "janilson@email.com", 53);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Khelly", 11, "khelly.com", 52);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Lemor", 12, "lemor@email.com", 51);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Minkes", 13, "minkes@email.com", 50);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Nukas", 14, "nukas@email.com", 49);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Onjis", 15, "onjis@email.com", 48);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Pamer", 16, "pamer@email.com", 47);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Querrya", 17, "querrya@email.com", 46);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Runnia", 18, "runnia@email.com", 45);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Stennios", 19, "stennios@email.com", 44);
+INSERT INTO clientes (nome, id, email, idade) VALUES ("Tumbra", 20, "tumbra@email.com", 43);
+
+
+
+PARTE.4
+=======
+SELECT * FROM clientes;
+SELECT nome FROM clientes;
+SELECT idade FROM clientes;
+SELECT id FROM clientes WHERE id = 1;
+SELECT * FROM clientes LIMIT 4;
+
+
+* CRIAR NOVAMENTE A TABELA clientes
+
+CREATE TABLE clientes(
+ 
+  id INTEGER PRIMARY KEY,
+  nome VARCHAR(50),
+  email VARCHAR(50),
+  idade INTEGER
+);
+
+
+
+PARTE.5
+=======
+UPDATE clientes SET nome = "Adevair Vitório" 
+WHERE id = 1;
+
+
+
+PARTE.6
+=======
+UPDATE clientes SET nome ="Odeio Banco de dados da Silva" 
+WHERE id = 3;
+
+
+
+PARTE.7
+=======
+DELETE FROM clientes WHERE id = 3;
+
+
+
+
+
+
+
